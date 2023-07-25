@@ -5,7 +5,7 @@ public class Basics {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Nova ⚝ \n");
+		// System.out.println("Nova ⚝ \n");
 		
 		System.out.println("	JDK - > Software Development Kit Consists : "
 				+ "\n		JRE - > Software Package Consists : "
