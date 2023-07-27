@@ -1,6 +1,6 @@
 import javax.xml.transform.Source;
 
-public class QuickSort { //O( n log n) - average // O (n pow 2) - worst 
+public class QuickSort { //Theta( n log n) - average // O (n pow 2) - worst 
     //or O(n pow 2) when array is sorted and pivot is largest or smallest element
 
     public static void quickSort(int[] arr, int si, int ei) {
