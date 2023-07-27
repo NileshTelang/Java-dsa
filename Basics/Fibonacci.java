@@ -6,14 +6,14 @@ public class Fibonacci {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the num  : ");
-        int num = sc.nextInt();
+        long num = sc.nextInt();
 
         fibonacciSeries(num);
         
     }
-    public static void fibonacciSeries(int fs) {
+    public static void fibonacciSeries(long fs) {
 	      
-		int a = 0, b = 1;
+		long a = 0, b = 1;
 	          
 	    System.out.print(a+" ");
 	      
@@ -22,7 +22,7 @@ public class Fibonacci {
 	        for(int i=1; i<fs; i++) {
 	            System.out.print(b+" ");
 	            //the concept below is called swapping
-	            int temp = b;
+	            long temp = b;
 	            b = a + b;
 	            a = temp;
 	        }
