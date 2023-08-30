@@ -45,6 +45,26 @@ public class StringBuilders {
 		System.out.println("\nThe Compressed String Is - "+exa);
 	}
 
+	public static void stringCompress2(String str) {
+		StringBuilder compressed = new StringBuilder();
+		int count = 1;
+	
+		for (int i = 0; i < str.length(); i++) {
+			if (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) {
+				count++;
+			} else {
+				compressed.append(str.charAt(i));
+				if (count > 1) {
+					compressed.append(count);
+				}
+				count = 1;
+			}
+		}
+	
+		System.out.println("\nThe Compressed String Is - " + compressed);
+	}
+	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner (System.in);
@@ -92,7 +112,7 @@ public class StringBuilders {
 		touppercase(pop);
 
 		String compres = "AAAAAABBBCCCCCCDDE";
-		stringCompress(compres);
+		stringCompress2(compres);
 
 	}
 
